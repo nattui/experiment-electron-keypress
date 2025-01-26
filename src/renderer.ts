@@ -26,6 +26,13 @@
  * ```
  */
 
-import './index.css';
+import "./index.css"
 
-console.log('👋 This message is being logged by "renderer.ts", included via Vite');
+console.log(
+  '👋 This message is being logged by "renderer.ts", included via Vite',
+)
+
+document.addEventListener("keypress", () => {
+  const audio = new Audio("/sounds/key.wav")
+  audio.play().catch((err) => console.error("Error playing audio:", err))
+})

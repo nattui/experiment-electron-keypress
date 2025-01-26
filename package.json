@@ -10,11 +10,11 @@
   },
   "main": ".vite/build/main.js",
   "scripts": {
+    "dev": "electron-forge start",
     "lint": "eslint --ext .ts,.tsx .",
     "make": "electron-forge make",
     "package": "electron-forge package",
-    "publish": "electron-forge publish",
-    "start": "electron-forge start"
+    "publish": "electron-forge publish"
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.1"
